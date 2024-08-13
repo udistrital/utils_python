@@ -1,0 +1,10 @@
+README.md
+setup.py
+xray_python/__init__.py
+xray_python/request_tools.py
+xray_python/xray.py
+xray_python.egg-info/PKG-INFO
+xray_python.egg-info/SOURCES.txt
+xray_python.egg-info/dependency_links.txt
+xray_python.egg-info/requires.txt
+xray_python.egg-info/top_level.txt
