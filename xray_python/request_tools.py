@@ -5,7 +5,8 @@ from aws_xray_sdk.core import xray_recorder
 from flask import request
 
 # Importa la configuración de X-Ray
-import xray
+#import xray
+from xray_python import xray
 
 # Configuración del logger
 logging.basicConfig(level=logging.ERROR)
