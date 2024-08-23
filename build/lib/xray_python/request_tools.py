@@ -44,7 +44,7 @@ def get_json(url, target):
         raise
     finally:
         segment.put_http_meta('method', 'GET')
-        segment.put_http_meta('url', url)
+        segment.put_http_meta('url', request.url)
         segment.put_http_meta('status', response.status_code)
         xray_recorder.end_segment()
 
@@ -70,7 +70,7 @@ def post_json(url, data, target):
         raise
     finally:
         segment.put_http_meta('method', 'POST')
-        segment.put_http_meta('url', url)
+        segment.put_http_meta('url', request.url)
         segment.put_http_meta('status', response.status_code)
         xray_recorder.end_segment()
 
@@ -96,6 +96,6 @@ def put_json(url, data, target):
         raise
     finally:
         segment.put_http_meta('method', 'PUT')
-        segment.put_http_meta('url', url)
+        segment.put_http_meta('url', request.url)
         segment.put_http_meta('status', response.status_code)
         xray_recorder.end_segment()
