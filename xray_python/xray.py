@@ -18,7 +18,7 @@ def init_xray(app):
     logging.basicConfig(level=logging.DEBUG)
     logger = logging.getLogger('aws_xray_sdk')
     xray_recorder.configure(
-        daemon_address='3.81.69.43:2000',
+        daemon_address='13.221.194.69:2000',
         sampling=True,
         context_missing='LOG_ERROR',
         #service='my-flask-app',
