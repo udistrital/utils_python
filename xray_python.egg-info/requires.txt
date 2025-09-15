@@ -1,5 +1,5 @@
-aws-xray-sdk
-boto3
-flask
 requests
+boto3
+aws-xray-sdk
+flask
 xray
